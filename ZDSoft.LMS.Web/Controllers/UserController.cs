@@ -19,6 +19,10 @@ namespace ZDSoft.LMS.Web.Controllers
         {
             return View();
         }
+        public ActionResult getall()
+        {
+            return View();
+        }
 
         #region 登录
         [HttpGet]
