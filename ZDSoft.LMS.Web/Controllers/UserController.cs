@@ -12,7 +12,7 @@ namespace ZDSoft.LMS.Web.Controllers
 {
     public class UserController : Controller
     {
-        //
+        //test
         // GET: /User/
 
         public ActionResult Index()
