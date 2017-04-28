@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    <script language="javascript" type="text/javascript">
+        $(document).ready(function () {//页面加载后执行
+            setDivSize(); //调整页面
+            window.onresize = function () { setDivSize(); };  //屏幕大小改变时调整页面
+        });
+
+        //调整显示子页面内容区域的大小
+        function setDivSize() {
+            var screenHeight = getTotalHeight(); //获取浏览器可显示内容的高度
+            var readerDivHeight = screenHeight - 75 - 29; //计算用于显示子页面(或左边菜单栏)的高度,75:顶部div的高度;29:底部的高度
+            $("#divSubMenu").css("height", readerDivHeight); //设置左边菜单栏的高度
+            $("#divContentPage").css("height", readerDivHeight - 20);
+
+            var screenWidth = getTotalWidth(); //获取浏览器可显示内容的宽度            
+            var divSubMenuWidth = $("#divSubMenu").width(); //获取左边菜单的宽度
+            var divContentPageWidth = screenWidth - divSubMenuWidth - 40; //计算显示子页面的宽度,20:解决ie9浏览器padding的bug
+            
+            $("#divContentPage").width(divContentPageWidth); //设置显示子页面的宽度            
+        }       
+    </script>
+</head>
+<body>
+    <div class="page">
+        @*顶部区域*@
+        @Html.Partial("_Header")
+
+        @*页面中间部分*@
+        <div id="divCenter">
+            @*菜单部分*@
+            <div id="divSubMenu" class="divSubMenu">
+                <div>
+                    <img src="@Url.Content("~/Content/Images/LeftMenu/m_12.gif")" alt="" width="127" height="33" />
+                </div>
+                <ul>
+                    @{/*
+                        //获取顶层菜单
+                        //条件父节点为null（Parent == null）且显示状态为可见（IsShow == true）
+                        var privilegeListParent = (ViewBag.PrivilegeList as IList<ZDSoft.LMS.Domain.SystemFunction>)
+                            .Where(m => m.Parent == null && m.IsShow == true)
+                            .OrderBy(m => m.Idx).ToList();
+                        //循环输出顶层菜单
+                        foreach (ZDSoft.LMS.Domain.SystemFunction function in privilegeListParent)
+                        {
+                        <!-- 顶级菜单 -->
+                        <li class="menuRow" style="display:block;">
+                            @Html.ActionLink(function.SystemFunctionName, function.ActionName, function.ControllerName)
+                            <!-- 二级菜单 -->
+                            @if (function.Children == null) {
+                                //如果无子节点则进入下一次循环
+                                continue;
+                            }
+                            <ul>
+                                @*循环输出可见（IsShow == true）的二级节点*@
+                                @foreach (ZDSoft.LMS.Domain.SystemFunction item in function.Children.Where(m => m.IsShow == true).ToList())
+                                {
+                                <li class="menuSubRow">
+                                    @Html.ActionLink(item.SystemFunctionName, item.ActionName, item.ControllerName)
+                                </li>
+                                }
+                            </ul>
+                        </li>
+                        }*/
+                    }
+                </ul>
+            </div>
+            @*显示子页面区域*@
+            <div id="divContentPage" style="overflow:hidden;">
+                <!-- 导航栏 -->
+                <div id="contentPageTitle">
+                    &nbsp;&gt;&gt;@ViewBag.Title
+                </div>
+                <div id="titleContentDivider"></div>
+                <br />
+                @RenderBody()
+            </div>
+        </div>
+        @*使父级div与最高的div等高*@
+        <div style="clear: both;">
+        </div>
+
+        @*页面底部*@
+        @Html.Partial("_Footer")
+    </div>
+</body>
+</html>

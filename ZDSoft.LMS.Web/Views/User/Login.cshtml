@@ -1,0 +1,47 @@
+﻿@model ZDSoft.LMS.Domain.User
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <link href="~/Content/css/login.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="divMain">
+        <div>
+            <img src="~/Content/images/login/Logo.jpg">
+            <img src="~/Content/images/login/SystemLogo.jpg">
+        </div>
+        <div>
+            <img src="~/Content/images/login/l_03.jpg">
+            <img src="~/Content/images/login/l_04.jpg">
+        </div>
+        <div>
+            <img src="~/Content/images/login/l_05.jpg">
+            <div class="logincss">
+                @using (Html.BeginForm(new { action = "Login", controller = "User" }))
+                {
+                    <label>用户名：</label>
+                    @Html.TextBoxFor(model => model.Account, new { @Style = "width:100px; height:20px;" })<br><br>
+                    @*<input  type="text" id="Account" name="Account" style="width:100px; height:20px;"/><br /><br />*@
+                    <label>密&nbsp;&nbsp;&nbsp;码：</label>
+                    @Html.PasswordFor(model => model.Password, new { @Style = "width:100px; height:20px;" })<br><br>
+                @*<input style="width:100px; height:20px;" type="password" id="Password" name="Password" /> <br /><br />*@
+                    <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                    <input type="submit" class="submitcss" value=" ">
+                }
+
+            </div>
+            <img src="~/Content/images/login/l_07.jpg">
+        </div>
+        <div>
+            <img src="~/Content/images/login/l_08.jpg">
+        </div>
+    </div>
+</body>
+</html>

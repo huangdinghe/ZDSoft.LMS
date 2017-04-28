@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<root>
+    <element Id="IUserService" Service="ZDSoft.LMS.Service.IUserService, ZDSoft.LMS.Service" Class="ZDSoft.LMS.Component.UserComponent, ZDSoft.LMS.Component"></element>
+ </root>

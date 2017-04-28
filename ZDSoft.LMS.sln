@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZDSoft.LMS.UnitTest", "ZDSoft.LMS.UnitTest\ZDSoft.LMS.UnitTest.csproj", "{0F15667B-7884-4E3D-A7D6-08C53B3FF3BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZDSoft.LMS.Component", "ZDSoft.LMS.Component\ZDSoft.LMS.Component.csproj", "{19943617-550C-407D-B7F2-E6B6CFE7B1E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZDSoft.LMS.Manager", "ZDSoft.LMS.Manager\ZDSoft.LMS.Manager.csproj", "{DBE865F6-5B00-4CF6-BD79-B1005685CC99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZDSoft.LMS.Service", "ZDSoft.LMS.Service\ZDSoft.LMS.Service.csproj", "{1FD23C31-B988-4878-930C-3DC2B5B5A46D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZDSoft.LMS.Domain", "ZDSoft.LMS.Domain\ZDSoft.LMS.Domain.csproj", "{87B4C368-EC0D-4A2F-A2F4-A775F34A10F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZDSoft.LMS.Core", "ZDSoft.LMS.Core\ZDSoft.LMS.Core.csproj", "{6621C4BE-3237-473D-9B81-C854365DE849}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZDSoft.LMS.Web", "ZDSoft.LMS.Web\ZDSoft.LMS.Web.csproj", "{41DF132E-21B5-424A-9CD8-7ECA10996ED2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F15667B-7884-4E3D-A7D6-08C53B3FF3BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F15667B-7884-4E3D-A7D6-08C53B3FF3BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F15667B-7884-4E3D-A7D6-08C53B3FF3BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F15667B-7884-4E3D-A7D6-08C53B3FF3BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19943617-550C-407D-B7F2-E6B6CFE7B1E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19943617-550C-407D-B7F2-E6B6CFE7B1E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19943617-550C-407D-B7F2-E6B6CFE7B1E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19943617-550C-407D-B7F2-E6B6CFE7B1E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBE865F6-5B00-4CF6-BD79-B1005685CC99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBE865F6-5B00-4CF6-BD79-B1005685CC99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBE865F6-5B00-4CF6-BD79-B1005685CC99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBE865F6-5B00-4CF6-BD79-B1005685CC99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FD23C31-B988-4878-930C-3DC2B5B5A46D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FD23C31-B988-4878-930C-3DC2B5B5A46D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FD23C31-B988-4878-930C-3DC2B5B5A46D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FD23C31-B988-4878-930C-3DC2B5B5A46D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87B4C368-EC0D-4A2F-A2F4-A775F34A10F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87B4C368-EC0D-4A2F-A2F4-A775F34A10F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87B4C368-EC0D-4A2F-A2F4-A775F34A10F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87B4C368-EC0D-4A2F-A2F4-A775F34A10F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6621C4BE-3237-473D-9B81-C854365DE849}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6621C4BE-3237-473D-9B81-C854365DE849}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6621C4BE-3237-473D-9B81-C854365DE849}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6621C4BE-3237-473D-9B81-C854365DE849}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41DF132E-21B5-424A-9CD8-7ECA10996ED2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41DF132E-21B5-424A-9CD8-7ECA10996ED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41DF132E-21B5-424A-9CD8-7ECA10996ED2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41DF132E-21B5-424A-9CD8-7ECA10996ED2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

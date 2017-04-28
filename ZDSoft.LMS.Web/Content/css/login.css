@@ -1,0 +1,30 @@
+﻿ /*cssDocment*/
+ body {
+            overflow: hidden;
+            background-image: url(../images/login/bg.gif);          
+        }
+
+        img {
+            display: block;
+            float: left;
+        }
+
+        .divMain {
+            width:1080px;
+            margin-left: 20%;
+            margin-top: 10%;
+        }
+
+        .submitcss {
+            width: 75px;
+            height: 30px;
+            background-image: url(../images/login/login.gif);
+        }
+
+        .logincss {
+            height: 133px;
+            width: 199px;
+            float: left;
+            background-image: url(../images/login/l_06.jpg);
+
+        }

@@ -1,0 +1,63 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>物流业务支撑系统</title>
+    <link href="~/Content/css/style.css" rel="stylesheet" />
+    <script src="~/Content/js/menu.js"></script>
+</head>
+
+<body>
+    <div class="all">
+        <div class="nav">
+            <img class="nav_title" src="~/Content/images/header_title.gif" />
+            @*<img class="nav_title" src="~/Content/images/header_title.gif">*@
+            <div class="nav_btn">
+                <a href="#">帮助</a><a href="#">注销</a>
+            </div>
+        </div>
+        <!--contentLeft-->
+        <div class="content_left">
+            <img src="~/Content/images/menuCategory.gif" alt="分类">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li>
+                    <a onclick="change(this)" href="#">控制面板</a>
+                    <ul>
+                        <li><a href="http:\\leencloud.cn">用户管理</a></li>
+                        <li><a href="#">角色管理</a></li>
+                        <li><a href="#">修改密码</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a onclick="change(this)" href="#">业务管理</a>
+                    <ul>
+                        <li><a href="#">接单管理</a></li>
+                        <li><a href="#">调度管理</a></li>
+                        <li><a href="#">送货单管理</a></li>
+                        <li><a href="#">回车报销</a></li>
+                        <li><a href="#">创建货物运单</a></li>
+                        <li><a href="#">业绩管理</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!--contentRight-->
+        <div class="content_right">
+            <div>
+                <h6>&gt;&gt;欢迎页</h6>
+                <p></p>
+            </div>
+            <div class="content_content">
+                @RenderBody() 
+                @RenderSection("Scripts",false)
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <span>Copyright &copy; 2016 - 2020 重庆广展物流有限公司 .All Rights Reserved.</span>
+    </footer>
+
+</body>
+</html>
